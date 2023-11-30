@@ -8,11 +8,7 @@ function App() {
   return (
     <>
       <Cabecalho />
-      {/* Comentário no meio de JSX
-    é normal ficar entre{} nesta situação. */}
-
       <Conteudo />
-
       <Rodape />
     </>
   );
