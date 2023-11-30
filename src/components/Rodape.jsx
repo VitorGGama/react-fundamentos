@@ -7,7 +7,7 @@ function Rodape() {
   };
   return (
     <footer style={exemplosEstilos}>
-      <h2>Rodapé da aplicação</h2>
+      <h2 style={{ textAlign: "center" }}>Rodapé da aplicação</h2>
     </footer>
   );
 }
