@@ -1,9 +1,15 @@
 function Menu() {
   return (
     <nav>
-      <a href="">Home</a>
-      <a href="">Produtos</a>
-      <a href="">Contato</a>
+      <a className={`${estilos["sombra"]} centralizar`} href="">
+        Home
+      </a>
+      <a className="sombra" href="">
+        Produtos
+      </a>
+      <a className="sombra" href="">
+        Contato
+      </a>
     </nav>
   );
 }

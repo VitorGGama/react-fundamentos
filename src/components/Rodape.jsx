@@ -1,9 +1,9 @@
 function Rodape() {
   const exemplosEstilos = {
-    backgroundColor: "lightblue",
-    padding: "2%",
+    backgroundColor: "white",
+    padding: "4%",
     color: "blue",
-    border: "solid 4px #f00",
+    border: "solid 20px #f00",
   };
   return (
     <footer style={exemplosEstilos}>

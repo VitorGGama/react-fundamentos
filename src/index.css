@@ -28,12 +28,12 @@ body {
 
 /* bloco/box*/
 .sombra {
-  box-shadow: red 0 0 10px;
+  box-shadow: rgb(76, 0, 255) 0 0 10px;
   background-color: white;
 }
 
 .destaque-texto {
-  background-color: yellow;
+  background-color: rgb(255, 0, 13);
   padding: 4px;
   border-radius: 4px;
 }
