@@ -1,4 +1,4 @@
-/*Cabecalho.css */
+/*Cabecalho.module.css */
 
 /* Sombra de texto*/
 .sombra {
@@ -10,4 +10,8 @@ hr {
   background-color: purple;
   width: 50%;
   margin: auto;
+}
+
+.destaque-texto {
+  text-transform: uppercase;
 }
