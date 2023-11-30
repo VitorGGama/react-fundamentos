@@ -11,6 +11,7 @@ function Conteudo() {
           libero natus neque ullam dolor atque! Ullam hic, cum quod dolor harum
           illo expedita esse dolores illum fuga nostrum nisi.
         </p>
+        <hr />
 
         {/*Reaproveitamento de componentes */}
         <Artigo />
