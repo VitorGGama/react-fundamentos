@@ -10,11 +10,11 @@ const StyledMenu = styled.nav`
   a {
     color: white;
     text-decoration: none;
-  }
-
-  a:hover {
-    background-color: pink;
-    color: black;
+    /*& -> referencia ao seletor pai */
+    &:hover {
+      background-color: pink;
+      color: black;
+    }
   }
 `;
 
