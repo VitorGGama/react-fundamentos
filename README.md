@@ -21,6 +21,8 @@ CSS Module: arquivo CSS especial relacionado ao componente que desejamos estiliz
 
 ---
 
+## 05-styled-components
+
 ## 00-projeto-resetado
 
 ### Informações gerais
