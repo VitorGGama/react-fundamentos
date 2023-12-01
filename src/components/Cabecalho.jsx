@@ -19,6 +19,7 @@ const StyledCabecalho = styled.header`
     margin: 8px auto;
   }
 `;
+
 function Cabecalho() {
   return (
     <StyledCabecalho>
