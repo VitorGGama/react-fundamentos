@@ -1,6 +1,6 @@
 /* Folha de estilos GLOBAL
-Será usada por elementos em todos os componentes
-da aplicação React */
+   Será usada por elementos em todos os componentes
+   da aplicação React */
 
 /* Ajuste do Box Model com box-sizing */
 *,
@@ -8,7 +8,8 @@ da aplicação React */
 *::before {
   box-sizing: border-box;
 }
-/*Reset */
+
+/* Reset */
 body,
 h1,
 h2,
@@ -23,18 +24,25 @@ html {
 }
 
 body {
-  font-family: "segoe UI" Arial;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f4f4; /* Cor de fundo para o corpo */
+  color: #333; /* Cor do texto padrão */
+  line-height: 1.6;
 }
 
-/* bloco/box*/
+/* Bloco/box */
 .sombra {
-  box-shadow: rgb(76, 0, 255) 0 0 10px;
-  background-color: white;
+  box-shadow: 0 0 10px rgba(76, 0, 255, 0.5); /* Adicionando uma sombra com transparência */
+  background-color: #fff;
+  padding: 20px; /* Ajustando o preenchimento */
+  border-radius: 8px;
+  margin: 20px 0; /* Adicionando margem para separar os elementos */
 }
 
 .destaque-texto {
-  background-color: rgb(255, 0, 13);
-  padding: 4px;
+  background-color: #ff0d0d;
+  color: #fff; /* Cor do texto no destaque */
+  padding: 8px;
   border-radius: 4px;
 }
 

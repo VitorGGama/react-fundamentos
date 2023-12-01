@@ -2,17 +2,19 @@
 
 /* Sombra de texto */
 .sombra {
-  text-shadow: green 2px 2px 5px;
+  text-shadow: 2px 2px 5px green;
 }
 
 hr {
   height: 4px;
   border: none;
-  background-color: rgb(0, 58, 128);
+  background-color: #003a80; /* Cor do fundo da linha */
   width: 50%;
   margin: auto;
 }
 
 .destaque-texto {
   text-transform: uppercase;
+  color: #003a80; /* Cor do texto destacado */
+  font-weight: bold; /* Texto em negrito */
 }
