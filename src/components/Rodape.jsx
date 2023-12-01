@@ -1,12 +1,5 @@
-import styled from "styled-components";
+import { StyledRodape } from "../styles/styles";
 
-const StyledRodape = styled.footer`
-  background-color: #ab77dc80;
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 function Rodape() {
   return (
     <StyledRodape>

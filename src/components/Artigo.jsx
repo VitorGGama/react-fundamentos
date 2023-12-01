@@ -4,7 +4,6 @@ const StyledArtigo = styled.article`
   background-color: pink;
   padding: 1rem;
   margin: 0.5rem 0 0.5rem 0;
-  display: flex;
 
   h3 {
     color: blue;
