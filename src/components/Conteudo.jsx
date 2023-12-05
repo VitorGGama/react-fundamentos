@@ -1,6 +1,11 @@
 import Artigo from "./Artigo";
 import styled from "styled-components";
 
+/* Importando os assets de imagem*/
+import imagem1 from "../assets/abra-o-livro.png";
+import imagem2 from "../assets/livro-magico.png";
+import imagem3 from "../assets/pilha-de-livros.png";
+
 const StyledConteudo = styled.main`
   width: 90vw;
   margin: 1rem auto;
@@ -42,18 +47,21 @@ function Conteudo() {
         {/*Reaproveitamento de componentes */}
         <div className="artigos">
           <Artigo
+            imagem={imagem1}
             icone="😎"
             titulo="Senhor dos Anéis"
             descricao="Livro criado por Tokien"
             lancamento={datasLancamentoLivros[0]}
           />
           <Artigo
+            imagem={imagem2}
             icone="🤢"
             titulo="Game of Thrones"
             descricao="Aventura maluca com gente"
             lancamento={datasLancamentoLivros[1]}
           />
           <Artigo
+            imagem={imagem3}
             icone="😂"
             titulo="Html5 e CSS3"
             descricao="Fonte de estudo para quem quer começar no front-end"

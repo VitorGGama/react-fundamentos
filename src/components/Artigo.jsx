@@ -19,6 +19,7 @@ const StyledArtigo = styled.article`
 function Artigo(props) {
   return (
     <StyledArtigo>
+      <img src={props.imagem} alt="" />
       <h3>
         <span>{props.icone}</span>
         {props.titulo}
