@@ -26,6 +26,8 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  const datasLancamentoLivros = ["15-03-2022", "25-07-1998", "02-03-1997"];
+
   return (
     <StyledConteudo>
       <section>
@@ -40,16 +42,22 @@ function Conteudo() {
         {/*Reaproveitamento de componentes */}
         <div className="artigos">
           <Artigo
+            icone="😎"
             titulo="Senhor dos Anéis"
             descricao="Livro criado por Tokien"
+            lancamento={datasLancamentoLivros[0]}
           />
           <Artigo
+            icone="🤢"
             titulo="Game of Thrones"
             descricao="Aventura maluca com gente"
+            lancamento={datasLancamentoLivros[1]}
           />
           <Artigo
+            icone="😂"
             titulo="Html5 e CSS3"
             descricao="Fonte de estudo para quem quer começar no front-end"
+            lancamento={datasLancamentoLivros[2]}
           />
         </div>
       </section>
