@@ -39,9 +39,18 @@ function Conteudo() {
 
         {/*Reaproveitamento de componentes */}
         <div className="artigos">
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo
+            titulo="Senhor dos Anéis"
+            descricao="Livro criado por Tokien"
+          />
+          <Artigo
+            titulo="Game of Thrones"
+            descricao="Aventura maluca com gente"
+          />
+          <Artigo
+            titulo="Html5 e CSS3"
+            descricao="Fonte de estudo para quem quer começar no front-end"
+          />
         </div>
       </section>
     </StyledConteudo>
