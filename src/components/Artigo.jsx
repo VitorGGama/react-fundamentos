@@ -27,3 +27,28 @@ function Artigo({ titulo, categoria, preco }) {
 }
 
 export default Artigo;
+
+//Versão do Professor
+
+/* function Artigo(props) {
+  const formatarPreco = (valor) => {
+    return valor.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+  };
+
+  return (
+    <StyledArtigo>
+      <h3> {props.categoria} </h3>
+      <p>
+        <b>Curso:</b> {props.titulo}
+      </p>
+      <p>
+        <b>Preço:</b> {formatarPreco(props.preco)}
+      </p>
+    </StyledArtigo>
+  );
+}
+
+export default Artigo;*/
