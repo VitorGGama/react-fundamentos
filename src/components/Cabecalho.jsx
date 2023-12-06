@@ -14,9 +14,15 @@ function Cabecalho() {
   uma váriavel que representa o valor do state (titulo)
   e uma função responsável por atualizar o state (setTitulo). */
   const [titulo, setTitulo] = useState("Olá React!😆");
+
+  const mudarTitulo = () => {
+    /*Alterando o valor do state `titulo` através 
+    do setTitulo quando o ocorre o evento de clique no h1. */
+    setTitulo("oie!😎");
+  };
   return (
     <StyledCabecalho>
-      <h1>{titulo}</h1>
+      <h1 onClick={mudarTitulo}>{titulo}</h1>
       <hr />
       <Menu />
     </StyledCabecalho>
