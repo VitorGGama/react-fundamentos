@@ -29,8 +29,16 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  /* Função que será chamada a partir do evento acionado por 
+  um componente/elemento.*/
+  const exemplo2 = () => {
+    alert("Exemplo 2");
+  };
   return (
     <StyledConteudo>
+      <h2>Conteúdo da aplicação</h2>
+
+      <button onClick={exemplo2}>Exemplo 2</button>
       <section className="container">
         <div className="row">
           {cursos.map((curso, index) => (

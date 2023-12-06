@@ -7,6 +7,9 @@ import styled from "styled-components";
 function Cabecalho() {
   return (
     <StyledCabecalho>
+      {/*Propriedade de evento que executará, após o clique,
+      uma funçâo intermediaria que fará açôes (chamar outras funçôes,
+      executar outros processos etc*/}
       <h1
         onClick={() => {
           alert("Exemplo 1");
