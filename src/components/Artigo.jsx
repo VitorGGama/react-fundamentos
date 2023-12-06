@@ -16,10 +16,10 @@ const StyledArtigo = styled.article`
 `;
 
 /* Definindo props para o componente*/
-function Artigo({ titulo, categoria, preco }) {
+function Artigo({ titulo, categoria, preco, aoClicar }) {
   return (
     <StyledArtigo>
-      <h3>{titulo}</h3>
+      <h3 onClick={aoClicar}>{titulo}</h3>
       <p>{categoria}</p>
       <p>{`R$ ${preco}`}</p>
     </StyledArtigo>
@@ -40,7 +40,7 @@ export default Artigo;
 
   return (
     <StyledArtigo>
-      <h3> {props.categoria} </h3>
+        <h3 onclick={aoClicar}> {categoria} {props.categoria} </h3>
       <p>
         <b>Curso:</b> {props.titulo}
       </p>
