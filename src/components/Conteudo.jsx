@@ -50,6 +50,16 @@ function Conteudo() {
     const categoriaEscolhida = event.currentTarget.innerText;
     setCategoria(categoriaEscolhida);
   };
+
+  const limparFiltros = () => {
+    setCategoria(null);
+  };
+
+  /* Gerando um novo array de cursos filtrados */
+  const cursosFiltrados = cursos.filter((curso) => {
+    return curso.categoria === categoria || categoria === null;
+  });
+
   return (
     <StyledConteudo>
       <h2>Conteúdo da aplicação</h2>
@@ -62,9 +72,15 @@ function Conteudo() {
       <div className="filtros">
         <p>
           <b>Filtar por: </b>
-          <button onClick={aplicarFIltro}>Front End</button>
-          <button onClick={aplicarFIltro}>Back End</button>
+          <button onClick={aplicarFIltro}>Front-End</button>
+          <button onClick={aplicarFIltro}>Back-End</button>
           <button onClick={aplicarFIltro}>Design</button>
+          <button onClick={aplicarFIltro}>Mobile</button>
+          <button onClick={aplicarFIltro}>Música</button>
+
+          {categoria && (
+            <button onClick={limparFiltros}>limpa Filtros 🧹</button>
+          )}
         </p>
         {/* Renderização condicional
         O texto/tag/componente somente será <renderizado />
@@ -79,7 +95,7 @@ function Conteudo() {
 
       <section className="container">
         <div className="row">
-          {cursos.map((curso, index) => (
+          {cursosFiltrados.map((curso, index) => (
             <div key={index} className="col-md-4 mb-4">
               <Artigo
                 key={curso.id}
