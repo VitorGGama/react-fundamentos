@@ -29,8 +29,23 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  const aplicarFIltro = (event) => {
+    console.log(event.currenteTarget.innerText);
+  };
   return (
     <StyledConteudo>
+      <h2>Conteúdo da aplicação</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        labore? Officia quae quo a quas excepturi distinctio sint voluptas
+        labore iste veniam possimus facere adipisci sit repellat, voluptate,
+        expedita aspernatur.
+        <hr />
+        <b>Filtar por: </b>
+        <button onClick={aplicarFIltro}>Front End</button>
+        <button onClick={aplicarFIltro}>Back End</button>
+        <button onClick={aplicarFIltro}>Design</button>
+      </p>
       <section className="container">
         <div className="row">
           {cursos.map((curso, index) => (
