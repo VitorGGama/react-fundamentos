@@ -1,11 +1,11 @@
-import Artigo from "./Artigo";
+import Artigo from "./Artigo.jsx";
 import styled from "styled-components";
 import cursos from "../modules/cursos.js";
 import { useState } from "react";
 
 /* Importando os assets de imagem*/
 
-const StyledConteudo = styled.main`
+const StyledCursos = styled.section`
   .filtros {
     margin: 1rem 0;
     padding: 1rem 0;
@@ -29,7 +29,7 @@ const StyledConteudo = styled.main`
   }
 `;
 
-function Conteudo() {
+function Cursos() {
   /*Criando um gerenciador de state para mudança/filtro 
   de categorias. Inicialmente começa como null pois ainda não
   temos uma escolha/seleção de categoria (aparece tudo) */
@@ -55,7 +55,7 @@ function Conteudo() {
   const quantidade = cursosFiltrados.length;
 
   return (
-    <StyledConteudo>
+    <StyledCursos>
       <h2>Conteúdo da aplicação</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
@@ -112,8 +112,8 @@ function Conteudo() {
           ))}
         </div>
       </section>
-    </StyledConteudo>
+    </StyledCursos>
   );
 }
 
-export default Conteudo;
+export default Cursos;
