@@ -6,6 +6,9 @@ function Produtos() {
   ele será preenchido com os objetos/produtos. */
   const [produtos, setProdutos] = useState([]);
 
+  /*State de loading (por padrão, inicia ativado/true*/
+  const [loading, setLoading] = useState(true);
+
   /* Gerenciando efeito colateral 
 do componente para o carregamento dos dados da API.
 
@@ -23,9 +26,9 @@ e que será executado somente UMA VEZ.
       try {
         const resposta = await fetch(`https://fakestoreapi.com/products`);
         const dados = await resposta.json();
-
-        setProdutos(dados);
         console.log(dados);
+        setProdutos(dados); //adicionamos ao state
+        setLoading(false); //adicionamos o loading
       } catch (error) {
         console.error("Houve um erro: " + error);
       }
@@ -38,15 +41,19 @@ e que será executado somente UMA VEZ.
     <article>
       <h2>Produtos</h2>
 
-      {produtos.map((produto) => {
-        return (
-          <section key={produto.id}>
-            <h3>{produto.title}</h3>
-            <p>Preço: {produto.price}</p>
-            <p>Descrição: {produto.description}</p>
-          </section>
-        );
-      })}
+      {loading ? (
+        <p>Carregando...</p>
+      ) : (
+        produtos.map((produto) => {
+          return (
+            <section key={produto.id}>
+              <h3>{produto.title}</h3>
+              <p>Preço: {produto.price}</p>
+              <p>Descrição: {produto.description}</p>
+            </section>
+          );
+        })
+      )}
     </article>
   );
 }
