@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Produtos() {
   /*O state "produtos" é iniciado como um array vazio.
@@ -6,19 +6,23 @@ function Produtos() {
   ele será preenchido com os objetos/produtos. */
   const [produtos, setProdutos] = useState();
 
-  const carregarDados = async () => {
-    try {
-      const resposta = await fetch(`https://fakestoreapi.com/products`);
-      const dados = await resposta.json();
-      console.log(dados);
-      setProdutos(dados);
-      console.log(dados);
-    } catch (error) {
-      console.error("Houve um erro: "+error);
-    }
-  }
+  /* Gerenciando efeito colateral 
+do componente para o carregamento dos dados da API. */
+  useEffect(() => {
+    const carregarDados = async () => {
+      try {
+        const resposta = await fetch(`https://fakestoreapi.com/products`);
+        const dados = await resposta.json();
+        
+        setProdutos(dados);
+        console.log(dados);
+      } catch (error) {
+        console.error("Houve um erro: " + error);
+      }
+    };
 
-carregarDados();
+    carregarDados();
+  }, []);
 
   return <h2>Produtos</h2>;
 }
