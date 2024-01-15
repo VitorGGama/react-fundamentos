@@ -6,8 +6,8 @@ function Menu() {
   return (
     <StyledMenu>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/Produtos">Produtos</NavLink>
-      <NavLink to="/Contato">Contato</NavLink>
+      <NavLink to="/produtos">Produtos</NavLink>
+      <NavLink to="/contato">Contato</NavLink>
     </StyledMenu>
   );
 }
